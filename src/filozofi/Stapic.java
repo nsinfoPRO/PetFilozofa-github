@@ -21,8 +21,8 @@ public class Stapic {
     }
 // Stapic se koristi. */
 
-    public synchronized void take() {
-        try {
+    public synchronized void take() {            // synchronized metodu koristimo posto je nas objekat
+        try {                                    //vidljiv za vise od jednog thread-a,koji istovremeno 
             while (!free) {
                 wait();
             }
@@ -32,8 +32,8 @@ public class Stapic {
     }
 // Stapic se oslobadja. */
 
-    public synchronized void release() {
-        free = true;
-        notify();
+    public synchronized void release() {          
+        free = true;                             // thread-ove koji cekaju na ovaj objekat
+        notify();                                // notify() metoda klase Obјеct,obavestava sve
     }
 }

@@ -32,8 +32,8 @@ public class Filozof extends Thread {
             statistikajela++;
             levi.release();
             desni.release();
-            yield();
-        }
+            yield();                                   //yield metoda postavlja thread koji se 
+        }                                              //trenutno izvrsava u sleep mod
     }
 
     public String toString() {

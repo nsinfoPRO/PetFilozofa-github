@@ -24,11 +24,11 @@ public class PetFilozofa {
         e.start();
         try {
 
-            Thread.sleep(2000);
+            Thread.sleep(2000);                       //pravi razmak od 2 ms
         } catch (InterruptedException e1) {
             e1.printStackTrace();
         }
-        System.out.println(a);
+        System.out.println(a);                       //stampa na konzoli 
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
