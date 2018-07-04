@@ -33,7 +33,7 @@ public class Stapic {
 // Stapic se oslobadja. */
 
     public synchronized void release() {          
-        free = true;                             // thread-ove koji cekaju na ovaj objekat
-        notify();                                // notify() metoda klase Obјеct,obavestava sve
+        free = true;                             // notify() metoda klase Obјеct,obavestava sve
+        notify();                                // thread-ove koji cekaju na ovaj objekat
     }
 }
